@@ -1,0 +1,363 @@
+/*ACTUAL DOCUMENT*/
+
+* {
+    padding:0;
+    margin: 0;
+}
+
+html {
+    font-family: Helvetica;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+#welcome {
+    width:100%;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    z-index: 2;
+    overflow:hidden;
+    height: 700px;
+    background-image: linear-gradient(to bottom right, #1e5799 0%,#2989d8 52%,#ff89ef 100%);
+    /*background-image: linear-gradient(to bottom right,#1589FF, #F778A1);*/
+}
+#slideshow {
+    margin:auto;
+    width: 100%;
+    height: 600px;
+    padding-bottom: 2em;
+}
+#slideshow div img {
+    width: 50%;
+}
+
+
+#sRight > div {
+    position: absolute;
+}
+#sLeft > div {
+    position: absolute;
+}
+#sRight img {
+    float: right;
+}
+#sLeft img{
+    float: left;
+}
+#img {
+    width:150px;
+}
+#img2 {
+    width: 60px;
+    vertical-align: middle;
+}
+#title2 {
+    padding-top: 6px;
+    font-weight: bold;
+    padding-left: 1%;
+    display: none;
+    float: left;
+}
+#title2 a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav_menu {
+
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid white;
+
+}
+#nav_menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_menu ul li {
+    display: inline-block;
+
+}
+#nav_menu ul li a {
+    font-weight:bold;
+    font-size: 170%;
+    text-align: center;
+    margin: 2em;
+    padding-bottom: 10px;
+    text-decoration:none;
+    background-color: none;
+    color: white;
+}
+#nav_menu ul li a:hover {
+    animation-fill-mode:forwards;
+    animation-name: mousehover;
+    animation-duration: 0.5s;
+}
+.sticky {
+    top: 200;
+    position: fixed;
+}
+#intro {
+    font-family: serif;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 500%;
+}
+h2 {
+    text-align: center;
+}
+
+
+
+.arrow {
+    width: 50px;
+    padding-top: 7em;
+    display: block;
+    margin: 0 auto;
+}
+#main {
+    line-height: 2;
+    font-size: 120%;
+}
+
+.section {
+    padding: 1.5em;
+    margin: 0 auto 0;
+    display: block;
+    background: white;
+}
+.section:nth-child(odd) {
+    background: #F1F3F2;
+}
+.title {
+    text-align:center;
+    padding-top: 50px;
+}
+.content {
+    height: 700px;
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+#content1 {
+    height: 300px;
+}
+#content3 {
+    height: 460px;
+}
+.filler {
+    height: 300px;
+}
+.img-wrap {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+
+}
+.img-wrap img {
+    width: 150px;
+    margin: 0 5em;
+    display:inline-block;
+}
+
+.logo {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+
+}
+input[type=radio] {
+    display: inline;
+    width: 300px !important;
+    margin-top: 15px !important;
+    height: 15px !important;
+    -webkit-appearance: radio !important;
+}
+#isComing {
+    height: 0;
+    overflow: hidden;
+    
+}
+
+.location {
+    float: left;
+    clear: both;
+    text-align: left;
+    padding-top: 2em;
+}
+
+#contact {
+    height: auto;
+}
+#connect {
+    width: 50%;
+    float: left;
+}
+.form-wrap {
+    margin-top: 40px;
+    width: 50%;
+    float: right;
+    
+}
+.contact-wrap {
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    max-width: 1200px;
+}
+
+input, textarea {
+    border-radius: 5px;
+    display: block;
+    clear: both;
+    margin: 10px;
+    border:none;
+    border-bottom: 1px solid grey;
+    width: 80%;
+    max-width: 400px;
+    height: 2em;
+}
+textarea {
+    height: 10em; 
+}
+#button {
+    font-weight: bold;
+}
+input[type=submit] {
+    border-radius: 25px;
+    width: 30%;
+    min-width: 150px;
+    height: 60px;
+    padding: 1em;
+    text-align: center;
+    background:  #2989d8;
+    color: white;
+    cursor:pointer; 
+}
+
+input[type=submit]:hover {
+    opacity: 0.5;
+}
+
+main p {
+    padding: 0.5em 0;
+}
+.goTop {
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    background-color: #2989d8;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 5px grey;
+    font-weight: bold;
+    position: fixed;
+    top: 75%;
+    left: 85%;
+}
+.goTop, .goTop:hover {
+    color: white;
+    text-decoration: none;
+}
+.line{
+    height:3px;
+    width: 50%;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f0f0f0;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, #1e5799 0%,#2989d8 52%,#ff89ef 100%);
+}
+footer p {
+    margin-top: 10px;
+    font-size: 80%;
+}
+/*ANIMATIONS*/
+
+.comingTrans{
+    animation-fill-mode:forwards;
+    animation-name: iscomingTrans;
+    animation-duration: 0.5s;
+}
+
+.notComingTrans {
+    animation-fill-mode:forwards;
+    animation-name: iscomingTrans;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+.imganimate {
+    animation-fill-mode:forwards;
+    animation-name: imganimate;
+    animation-duration: 0.5s;
+}
+.imganimateback {
+    animation-fill-mode:forwards;
+    animation-name: imganimate;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+.mainanimate {
+    animation-fill-mode:forwards;
+    animation-name: mainanimate;
+    animation-duration: 0.5s;
+}
+
+.navtrans {
+    animation-fill-mode:forwards;
+    animation-name: navtrans;
+    animation-duration: 0.5s;
+}
+
+.navtransback {
+    animation-fill-mode:forwards;
+    animation-name: navtrans;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+@keyframes iscomingTrans {
+    0%   {height: 0px}
+    100%  {height: 575px}
+}
+
+@keyframes mainanimate {
+    0%   {padding-top: 700px}
+    100%  {padding-top: 100px}
+}
+@keyframes imganimate {
+    0%   {width: 150px}
+    100%  {width:0;}
+}
+@keyframes navtrans {
+    0%   { height: 700px;}
+    100%  {padding: 0 0 0;margin: 0;height: 60px; opacity: 1;}
+}
+@keyframes mousehover {
+    0%   {border-bottom: 0px solid white;}
+    100%  {border-bottom: 2px solid white;}
+}
